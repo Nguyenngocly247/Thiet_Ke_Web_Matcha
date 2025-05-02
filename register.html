@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Drink Store - Đăng nhập</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="ad-banner">
+        <marquee>Nhập mã MATSUYANF để nhận ưu đãi 50K cho đơn hàng trên 200k!</marquee>
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="Logo Matsuya">    
+        </div>   
+        <ul class="navigation">
+            <li><a href="trangchu.html">TRANG CHỦ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">SẢN PHẨM</a>
+                <div class="dropdown-content">
+                    <a href="sanpham.html#matcha" onclick="showProducts('matcha', event)">Trà Matcha</a>
+                    <a href="sanpham.html#houjicha" onclick="showProducts('houjicha', event)">Trà Houjicha</a>
+                    <a href="sanpham.html#banh" onclick="showProducts('banh', event)">Bánh Matcha</a>
+                    <a href="sanpham.html#bot" onclick="showProducts('bot', event)">Bột Matcha</a>
+                    <a href="sanpham.html#dungcu" onclick="showProducts('dungcu', event)">Dụng cụ</a>
+                </div>
+            </li>            
+            <li><a href="#">TIN TỨC</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+            <li><a href="#">KHÁC</a></li>
+        </ul>
+
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm..." class="search-input">
+            <button class="search-btn"></button>
+        </div>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="wrap_background_aside page_login">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="page-login clearfix">
+                        <div class="wpx">
+                            <h1 class="title_heads text-center"><span>ĐĂNG KÝ</span></h1>
+                            <p class="text-center dkm mt-2">
+                                Đã có tài khoản? Đăng nhập 
+                                <a href="/account/login" class="btn-link-style btn-register">tại đây</a>
+                            </p>
+
+                            <div id="login" class="section">
+                                <form action="/register" method="post">
+                                    <div class="form-signup text-danger">
+                                        <!-- Hiển thị lỗi nếu có -->
+                                    </div>
+                                    <div class="form-signup clearfix">
+                                        <div class="row">
+                                            <div class="col-12 mb-3">
+                                                <fieldset class="form-group">
+                                                    <input type="text" class="form-control form-control-lg" name="lastName" id="lastName" placeholder="Họ" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <fieldset class="form-group">
+                                                    <input type="text" class="form-control form-control-lg" name="firstName" id="firstName" placeholder="Tên" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <fieldset class="form-group">
+                                                    <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$" class="form-control form-control-lg" name="email" id="email" placeholder="Email" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 mb-3">
+                                                <fieldset class="form-group">
+                                                    <input type="text" pattern="\d+" class="form-control form-control-lg" name="Phone" placeholder="Số điện thoại" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12 mb-4">
+                                                <fieldset class="form-group">
+                                                    <input type="password" class="form-control form-control-lg" name="password" id="password" placeholder="Mật khẩu" required>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-style btn_50 w-100">Đăng ký</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                                            </div>
+                            </div>
+                        </div> <!-- .wpx -->
+                    </div> <!-- .page-login -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
